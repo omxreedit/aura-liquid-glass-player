@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="AURA — liquid crystal music player">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0d1c"/>
+      <stop offset=".55" stop-color="#070912"/>
+      <stop offset="1" stop-color="#05060b"/>
+    </linearGradient>
+    <radialGradient id="orbA">
+      <stop offset="0" stop-color="#5b3bff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#5b3bff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB">
+      <stop offset="0" stop-color="#00c2e0" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#00c2e0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbC">
+      <stop offset="0" stop-color="#ff3d9a" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#ff3d9a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".13"/>
+      <stop offset=".55" stop-color="#ffffff" stop-opacity=".045"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".07"/>
+    </linearGradient>
+    <linearGradient id="disc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset=".5" stop-color="#7c5cff"/>
+      <stop offset="1" stop-color="#ff5fd2"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".6" stop-color="#d9def8"/>
+      <stop offset="1" stop-color="#9aa6d6"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".11"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".03"/>
+    </linearGradient>
+    <filter id="blur" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="52"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <circle cx="120" cy="40" r="230" fill="url(#orbA)" filter="url(#blur)"/>
+  <circle cx="1090" cy="60" r="210" fill="url(#orbB)" filter="url(#blur)"/>
+  <circle cx="640" cy="470" r="250" fill="url(#orbC)" filter="url(#blur)"/>
+
+  <rect x="62" y="52" width="1076" height="316" rx="44" fill="url(#glass)" stroke="#ffffff" stroke-opacity=".17"/>
+  <rect x="62" y="52" width="1076" height="316" rx="44" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="6"/>
+
+  <!-- disc -->
+  <circle cx="262" cy="210" r="104" fill="#080a12" stroke="#ffffff" stroke-opacity=".16"/>
+  <circle cx="262" cy="210" r="96" fill="url(#disc)" opacity=".82"/>
+  <circle cx="262" cy="210" r="96" fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="1.5"/>
+  <circle cx="262" cy="210" r="76" fill="none" stroke="#ffffff" stroke-opacity=".12"/>
+  <circle cx="262" cy="210" r="56" fill="none" stroke="#ffffff" stroke-opacity=".1"/>
+  <circle cx="262" cy="210" r="34" fill="none" stroke="#ffffff" stroke-opacity=".09"/>
+  <circle cx="262" cy="210" r="24" fill="#07080e" stroke="#ffffff" stroke-opacity=".3"/>
+  <circle cx="262" cy="210" r="8" fill="#bff6ff"/>
+  <path d="M262 118a92 92 0 0 1 64 27" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- text -->
+  <text x="412" y="176" font-family="'Space Grotesk','Manrope',Arial,sans-serif" font-size="82" font-weight="700" letter-spacing="16" fill="url(#title)">AURA</text>
+  <text x="416" y="216" font-family="'Manrope',Arial,sans-serif" font-size="17" letter-spacing="6.5" fill="#98a1c0">LIQUID CRYSTAL MUSIC PLAYER</text>
+
+  <g font-family="'Manrope',Arial,sans-serif" font-size="13" letter-spacing="2.2" fill="#c8d0ee">
+    <rect x="416" y="252" width="152" height="38" rx="19" fill="url(#pill)" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="492" y="276" text-anchor="middle">3D GLASS</text>
+    <rect x="584" y="252" width="212" height="38" rx="19" fill="url(#pill)" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="690" y="276" text-anchor="middle">GENERATIVE AUDIO</text>
+    <rect x="812" y="252" width="214" height="38" rx="19" fill="url(#pill)" stroke="#ffffff" stroke-opacity=".16"/>
+    <text x="919" y="276" text-anchor="middle">REACTIVE VISUALS</text>
+  </g>
+
+  <!-- mini equalizer -->
+  <g fill="#22d3ee">
+    <rect x="416" y="310" width="6" height="14" rx="3" opacity=".85"/>
+    <rect x="428" y="304" width="6" height="26" rx="3" opacity=".95"/>
+    <rect x="440" y="298" width="6" height="38" rx="3"/>
+    <rect x="452" y="306" width="6" height="22" rx="3" opacity=".9"/>
+    <rect x="464" y="300" width="6" height="34" rx="3" opacity=".95"/>
+    <rect x="476" y="308" width="6" height="18" rx="3" opacity=".8"/>
+    <rect x="488" y="302" width="6" height="30" rx="3" opacity=".9"/>
+  </g>
+  <text x="516" y="334" font-family="'Manrope',Arial,sans-serif" font-size="12" letter-spacing="3.4" fill="#6f7a9c">WEB AUDIO · NO DEPENDENCIES</text>
+</svg>
