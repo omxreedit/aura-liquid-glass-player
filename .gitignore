@@ -1,3 +1,9 @@
 node_modules/
 .DS_Store
 *.log
+
+# Android build intermediates
+android/build/
+android/libs/
+android/assets/www/
+release/*.idsig

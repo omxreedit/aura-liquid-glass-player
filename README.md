@@ -6,6 +6,11 @@ ambient tracks are synthesised on the fly with the Web Audio API.
 
 <img src="banner.svg" alt="AURA — liquid crystal music player" width="100%" />
 
+## Download
+
+- **Android APK (landscape only):** [aura-1.0.0.apk](https://github.com/omxreedit/aura-liquid-glass-player/releases/latest/download/aura-1.0.0.apk)
+- **Live web player:** https://omxreedit.github.io/aura-liquid-glass-player/
+
 ## Features
 
 - **3D glass player** — pointer-reactive tilt with layered depth, glare and
@@ -22,6 +27,8 @@ ambient tracks are synthesised on the fly with the Web Audio API.
 - **Bring your own music** — add local audio via the file picker or drag & drop.
 - **Extras** — keyboard shortcuts, Media Session lock-screen controls, dynamic
   colour themes per track, responsive layout, reduced-motion support.
+- **Android app** — a 101 KB landscape-only WebView APK with immersive
+  fullscreen, screen-awake and a native audio file picker.
 
 ## Run it
 
@@ -31,6 +38,24 @@ It's a static site. Open `index.html` directly, or serve the folder:
 python3 -m http.server 8080
 # then visit http://localhost:8080
 ```
+
+## Android app (landscape only)
+
+The `android/` folder contains a minimal WebView wrapper locked to
+`sensorLandscape` — it never rotates to portrait, runs immersive fullscreen and
+keeps the screen awake. The web player is bundled inside the APK, so it works
+offline.
+
+Build it on Termux:
+
+```bash
+pkg install openjdk-17 aapt aapt2 d8 apksigner curl
+./android/build.sh
+```
+
+The signed APK lands in `release/aura-1.0.0.apk` (plus a `.sha256`). See
+[`android/README.md`](android/README.md) for signing-key details and install
+instructions.
 
 ## Keyboard shortcuts
 
