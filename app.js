@@ -250,7 +250,8 @@
     const beat = 60 / preset.bpm;
     const chordDur = beat * 4;
     const progression = [...preset.chords, ...preset.chords];
-    const total = chordDur * progression.length;
+    // extra tail so pad releases, delay and reverb decay instead of clicking
+    const total = chordDur * progression.length + 4.2;
 
     const off = new OfflineAudioContext(2, Math.ceil(sr * total), sr);
 
